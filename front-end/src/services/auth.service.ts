@@ -13,6 +13,6 @@ export class AuthService {
   url: string = environment.apiUrl;
 
   getPage(): Observable<any>{
-    return this.http.get('http://192.168.1.8:9090/Car_rental/controller?command=to_login_page');
+    return this.http.get(`${environment.serverUrl}api/hello`);
   }
 }
